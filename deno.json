@@ -1,0 +1,28 @@
+{
+    "name": "@pinta365/coros",
+    "version": "0.0.1",
+    "license": "MIT",
+    "exports": "./mod.ts",
+    "tasks": {
+        "pre:push": "deno fmt --check && deno lint && deno check mod.ts && deno test -A",
+        "sport:check": "deno run --allow-net=static.coros.com tools/check-sport-types.ts"
+    },
+    "publish": {
+        "exclude": [
+            "test",
+            "local_test",
+            ".gitattributes",
+            "deno.lock",
+            "tools"
+        ]
+    },
+    "fmt": {
+        "indentWidth": 4,
+        "lineWidth": 150
+    },
+    "imports": {
+        "@cross/test": "jsr:@cross/test@^0.0.14",
+        "@std/assert": "jsr:@std/assert@1",
+        "@cross/fs/io": "jsr:@cross/fs@^0.1.14/io"
+    }
+}

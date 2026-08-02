@@ -1,0 +1,7 @@
+# deno fmt writes LF. Without this, git's autocrlf on Windows rewrites line
+# endings on checkout and `deno fmt --check` fails on a clean tree.
+* text=auto eol=lf
+
+# Binary fixtures must not be line-ending converted.
+*.fit binary
+*.zip binary

@@ -1,0 +1,40 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@cross/fs@~0.1.14": "0.1.14",
+    "jsr:@cross/runtime@1.0": "1.0.0",
+    "jsr:@cross/test@^0.0.14": "0.0.14",
+    "jsr:@std/assert@1": "1.0.19",
+    "jsr:@std/internal@^1.0.12": "1.0.14"
+  },
+  "jsr": {
+    "@cross/fs@0.1.14": {
+      "integrity": "d59c53ef26e02d1d0369b0bcf1d01dbac89ef2fbc938c00ae9d8e7ed281ae96b"
+    },
+    "@cross/runtime@1.0.0": {
+      "integrity": "dddecdf99182df13d50279d1e473f715e83d41961c5c22edd7bb0c4c3cf8a76a"
+    },
+    "@cross/test@0.0.14": {
+      "integrity": "3af2cf23e39f97156d21da4b21373407735343493e333f33eaeceedce511a7f9",
+      "dependencies": [
+        "jsr:@cross/runtime"
+      ]
+    },
+    "@std/assert@1.0.19": {
+      "integrity": "eaada96ee120cb980bc47e040f82814d786fe8162ecc53c91d8df60b8755991e",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/internal@1.0.14": {
+      "integrity": "291516b3d4c35024d6ffbc0a9df5bf4c64116e05b50012cf846710152d2ffdf7"
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@cross/fs@~0.1.14",
+      "jsr:@cross/test@^0.0.14",
+      "jsr:@std/assert@1"
+    ]
+  }
+}

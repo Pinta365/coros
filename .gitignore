@@ -1,0 +1,13 @@
+# Local development scratch
+local_test/
+
+# Environment files
+.env
+.env.local
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+
+# Test artifact from the token file round-trip
+coros-token-*.txt
