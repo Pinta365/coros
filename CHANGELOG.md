@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.0.1] - 2026-08-02
+
 ### Added
 
 - Initial implementation of `@pinta365/coros` (Coros Training Hub API wrapper).
@@ -62,3 +64,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
   applied automatically, because the exceptions (`calories`, and anything not yet observed) are not fully mapped.
 
 [Unreleased]: https://github.com/pinta365/coros/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/pinta365/coros/releases/tag/v0.0.1

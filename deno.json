@@ -13,7 +13,9 @@
             "local_test",
             ".gitattributes",
             "deno.lock",
-            "tools"
+            "tools",
+            "CONTRIBUTING.md",
+            "CHANGELOG.md"
         ]
     },
     "fmt": {
